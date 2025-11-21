@@ -7,29 +7,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            background-color: grey;
+        body {
+            background-color: rgb(2, 9, 60);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: antiquewhite;
         }
 
         h2 {
-            color: red;
+            color: rgb(198, 195, 195);
         }
 
         p {
-            color: green;
+            color: rgb(186, 186, 186);
             font-size: 15px;
         }
-        ul li{
-            color: blue;
+
+        ul li {
+            padding: 20px;
+            color: rgb(192, 192, 255);
+            text-decoration: none;
         }
-        #seccion-inicio{
+
+        #seccion-inicio {
             background-color: rgb(97, 96, 96);
             border: 2px solid black;
         }
-        #seccion-informacion{
-            background-color: rgb(201, 199, 199);
+
+        form {
+            background-color: rgb(228, 227, 227);
             border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 180px;
         }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 60px;
+        }
+
+        footer {
+            text-align: center;
+        }
+
 
     </style>
 </head>
@@ -38,7 +68,6 @@
     <div>
         <header>
             <h1>Mi primer Git</h1>
-            <img src="../mi-proyecto-web/imagenes/20240821_133829.jpg" width="350" alt="paisaje">
             <nav>
                 <ul>
                     <li><a href="#seccion-inicio">Inicio</a></li>
@@ -50,25 +79,34 @@
 
         <main>
             <section id="seccion-inicio">
+                <img src="../mi-proyecto-web/imagenes/20240821_133829.jpg" width="350" alt="paisaje">
                 <h2>Inicio</h2>
                 <p>Esta es la sección de inicio de la pagina
                 </p>
             </section>
             <section id="seccion-informacion">
-                <h2>Informacion</h2>
-                <p>En esta seccion iria informacion mas detallada para ver en
-                    que consiste la pagina</p>
+                <h2>¿Qué es Git?</h2>
+                <p>Git es un sistema de control de versiones distribuido, creado por Linus Torvalds en 2005.
+                    Permite gestionar y llevar un registro de los cambios realizados en archivos de código fuente u
+                    otros documentos a lo largo del tiempo.
+                    Es una herramienta fundamental en el desarrollo de software, especialmente cuando se
+                    trabaja en equipo, ya que ayuda a coordinar el trabajo entre múltiples personas de manera
+                    eficiente.</p>
             </section>
             <section id="seccion-contacto">
                 <h2>Contacto</h2>
 
                 <p>Aqui pondriamos todos los iput de contacto</p>
+                <form action="">
                 <label for="nombre">Nombre Completo</label>
                 <input type="text" id="nombre">
+                <br>
                 <label for="correo">Correo Electronico</label>
                 <input type="text" id="correo">
+                <br>
                 <input type="textarea" id="text" placeholder="Escribe aqui">
                 <input type="submit" value="Enviar">
+                </form>
             </section>
 
         </main>
